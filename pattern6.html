@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let n=6;
+        let string="";
+        for(let i=1;i<=n;i++)
+        {
+            for(let j=0;j<i;j++)
+            {
+                if(i==n)
+                {
+                    string+="*";
+                }
+                else
+                {
+                    if(j==0 || j==i-1)
+                    {
+                        string +="* ";
+                    }
+                    else
+                    {
+                        string +="&nbsp;&nbsp;";
+                    }
+                }
+            }
+            string+="<br>";
+        }
+        document.write(string);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
